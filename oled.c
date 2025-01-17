@@ -51,6 +51,7 @@ bool oled_task_user(void) {
     } else {
         render_logo();
     }
+	return false;
 }
 
 #endif
