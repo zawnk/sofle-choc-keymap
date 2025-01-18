@@ -19,11 +19,13 @@ enum combo_events {
 const uint16_t PROGMEM combo_toggle_layers[] = {LT(_NAV, KC_ENT), LT(_NAV, KC_DEL), COMBO_END};
 const uint16_t PROGMEM combo_copy_shortcut[] = {KC_X, KC_C, COMBO_END};
 const uint16_t PROGMEM combo_paste_shortcut[] = {KC_C, KC_V, COMBO_END};
+const uint16_t PROGMEM combo_gaming_tab[] = {KC_LCTL, KC_LSFT, COMBO_END};
 
 combo_t key_combos[] = {
     [COMBO_TOGGLE_LAYERS] = COMBO(combo_toggle_layers, TG(_GAMING)),
 	[COMBO_COPY_SHORTCUT] = COMBO(combo_copy_shortcut, LCTL(KC_C)),
 	[COMBO_PASTE_SHORTCUT] = COMBO(combo_paste_shortcut, LCTL(KC_V)),
+	[COMBO_GAMING_TAB] = COMBO(combo_gaming_tab, KC_TAB),
 };
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {

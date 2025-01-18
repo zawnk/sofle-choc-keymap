@@ -2,8 +2,7 @@
 
 #undef TAPPING_TERM
 #define TAPPING_TERM    175
-#define PERMISSIVE_HOLD
-#define TAPPING_TERM_PER_KEY
+// #define PERMISSIVE_HOLD
 
 // The default is 300. Let's try and make this as low as possible while keeping the cursor responsive
 #undef MOUSEKEY_DELAY
