@@ -31,6 +31,7 @@
 
 // Auto Shift for numbers and symbols
 #define NO_AUTO_SHIFT_ALPHA
+#define NO_AUTO_SHIFT_TAB
 #define AUTO_SHIFT_TIMEOUT TAPPING_TERM
 #define AUTO_SHIFT_NO_SETUP
 #define BOTH_SHIFTS_TURNS_ON_CAPS_WORD
