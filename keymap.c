@@ -13,6 +13,7 @@ enum combo_events {
 	COMBO_TOGGLE_LAYERS,
 	COMBO_COPY_SHORTCUT,
 	COMBO_PASTE_SHORTCUT,
+	COMBO_GAMING_TAB,
 };
 
 // Combo definitions
