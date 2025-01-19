@@ -1,8 +1,7 @@
 #pragma once
 
 #undef TAPPING_TERM
-#define TAPPING_TERM    175
-// #define PERMISSIVE_HOLD
+#define TAPPING_TERM 175
 
 // The default is 300. Let's try and make this as low as possible while keeping the cursor responsive
 #undef MOUSEKEY_DELAY
@@ -34,9 +33,5 @@
 #define NO_AUTO_SHIFT_TAB
 #define AUTO_SHIFT_TIMEOUT TAPPING_TERM
 #define AUTO_SHIFT_NO_SETUP
-#define BOTH_SHIFTS_TURNS_ON_CAPS_WORD
 
 #define MAX_DEFERRED_EXECUTORS 32
-
-// Needed to redefine combos to have them do different things on different layers
-#define COMBO_SHOULD_TRIGGER 
