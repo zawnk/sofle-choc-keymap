@@ -14,7 +14,8 @@ enum combo_events {
 	COMBO_COPY_SHORTCUT,
 	COMBO_PASTE_SHORTCUT,
 	COMBO_GAMING_TAB,
-	COMBO_ENABLE_CAPS_WORD
+	COMBO_ENABLE_CAPS_WORD_QWERTY,
+	COMBO_ENABLE_CAPS_WORD_GAMING
 };
 
 // Combo definitions
@@ -22,14 +23,16 @@ const uint16_t PROGMEM combo_toggle_layers[] = {LT(_NAV, KC_ENT), LT(_NAV, KC_DE
 const uint16_t PROGMEM combo_copy_shortcut[] = {KC_X, KC_C, COMBO_END};
 const uint16_t PROGMEM combo_paste_shortcut[] = {KC_C, KC_V, COMBO_END};
 const uint16_t PROGMEM combo_gaming_tab[] = {KC_LCTL, KC_LSFT, COMBO_END};
-const uint16_t PROGMEM combo_enable_caps_word[] = {KC_F, KC_J, COMBO_END};
+const uint16_t PROGMEM combo_enable_caps_word_qwerty[] = {LSFT_T(KC_F), RSFT_T(KC_J), COMBO_END};
+const uint16_t PROGMEM combo_enable_caps_word_gaming[] = {KC_F, KC_J, COMBO_END};
 
 combo_t key_combos[] = {
 	[COMBO_TOGGLE_LAYERS] = COMBO(combo_toggle_layers, TG(_GAMING)),
 	[COMBO_COPY_SHORTCUT] = COMBO(combo_copy_shortcut, LCTL(KC_C)),
 	[COMBO_PASTE_SHORTCUT] = COMBO(combo_paste_shortcut, LCTL(KC_V)),
 	[COMBO_GAMING_TAB] = COMBO(combo_gaming_tab, KC_TAB),
-	[COMBO_ENABLE_CAPS_WORD] = COMBO(combo_enable_caps_word, QK_CAPS_WORD_TOGGLE),
+	[COMBO_ENABLE_CAPS_WORD_GAMING] = COMBO(combo_enable_caps_word_gaming, QK_CAPS_WORD_TOGGLE),
+	[COMBO_ENABLE_CAPS_WORD_QWERTY] = COMBO(combo_enable_caps_word_qwerty, QK_CAPS_WORD_TOGGLE),
 };
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
